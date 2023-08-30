@@ -1,0 +1,89 @@
+/* Discount Calculator Style */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.discount .price, .discount .discount-percentage, .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.discount input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.discount input:focus {
+    outline: none;
+}
+
+.discount input::placeholder {
+    color: #ccc;
+}
+
+.discount input[type="number"]::-webkit-inner-spin-button,
+
+.discount input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.discount input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.discount label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.discount button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.discount button:hover {
+    background-color: #333;
+}
